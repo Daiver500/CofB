@@ -6,47 +6,78 @@
   <meta name="description" content="Письмо" />
   <meta name="keywords" content="письмо, рассылка" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preload" href="css/style.css" as="style" />
+  <!--<link rel="preload" href="css/style.css" as="style" />
   <link rel="preload" href="fonts/pt-mono.woff2" as="font" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />-->
   <title>Письмо</title>
 </head>
 
-<body class="page">
+<body class="page" 
+style="font-family: 'PTMono', 'Arial', sans-serif;
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: #f2d915;">
   <section class="header">
-    <h1 class="visually-hidden">Бизнес в Санкт-Петербурге</h1>
-    <div class="header__inner container">
-      <h2 class="visually-hidden">Развиваем бизнес в Санкт-Петербурге</h2>
+    <div class="header__inner container" 
+    style="display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding-bottom: 10px;">
       <div class="header__image">
-        <a class="header__link" href="https://www.crpp.ru/" target="_blank"><img src="img/top-img.jpg" srcset="img/top-img@2x.jpg 2x"  width="600" height="164" alt="заголовок с логотипами"></a>
+        <a class="header__link" href="https://www.crpp.ru/" target="_blank"><img style="width: 100%;" src="img/top-img.jpg" srcset="img/top-img@2x.jpg 2x"  width="600" height="164" alt="заголовок с логотипами"></a>
       </div>
-      <div class="header__information">
-        <h3 class="header__title">Уважаемые предприниматели</h3>
-        <p class="header__text">Сегодня в выпуске</p>
-        <div class="header__text-block">
-          <p class="header__title">#Польза</p>
-          <p class="header__text">10 полезных ресурсов для креативного предпринимателя</p>
+      <div class="header__information" style="padding: 0 20px;">
+        <h3 class="header__title" 
+        style="margin-bottom: 10px;
+        font-size: 20px;">
+        Уважаемые предприниматели!</h3>
+        <p class="header__text"  style="margin-bottom: 10px;">Сегодня в выпуске</p>
+        <div class="header__text-block" style="display: flex; flex-wrap: wrap;">
+          <p class="header__title" style="margin-bottom: 10px; margin-top: 0;"><b>#Польза:</b></p>
+          <p class="header__text" style="margin-bottom: 10px; margin-top: 0;">10 полезных ресурсов для креативного предпринимателя</p>
         </div>
-        <div class="header__text-block">
-          <p class="header__title">#Приглашение</p>
-          <p class="header__text">примите участие во Всероссийской переписи населения</p>
+        <div class="header__text-block" style="display: flex; flex-wrap: wrap;">
+          <p class="header__title" style="margin-bottom: 10px; margin-top: 0;"><b>#Приглашение:</b></p>
+          <p class="header__text" style="margin-bottom: 10px; margin-top: 0;">примите участие во Всероссийской переписи населения</p>
         </div>
-        <div class="header__text-block">
-          <p class="header__title">#Образование</p>
-          <p class="header__text">ближайшие мероприятия ЦРПП</p>
+        <div class="header__text-block" style="display: flex; flex-wrap: wrap;">
+          <p class="header__title" style="margin-bottom: 10px; margin-top: 0;"><b>#Образование:</b></p>
+          <p class="header__text" style="margin-bottom: 10px; margin-top: 0;">ближайшие мероприятия ЦРПП</p>
         </div>
-        <div class="header__text-block">
-          <p class="header__title">#Возможности</p>
-          <p class="header__text">стартовал прием электронных заявок на субсидии</p>
+        <div class="header__text-block" style="display: flex; flex-wrap: wrap;">
+          <p class="header__title" style="margin-bottom: 10px; margin-top: 0;"><b>#Возможности:</b></p>
+          <p class="header__text" style="margin-bottom: 10px; margin-top: 0;">стартовал прием электронных заявок на субсидии</p>
         </div>
       </div>
       </div>
   </section>
-  <section class="usefull">
-    <div class="usefull__inner container">
-      <h2 class="usefull__header">#Польза</h2>
+  <section class="usefull"
+   style="display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;">
+    <div class="usefull__inner container"
+    style="padding-left: 20px;
+    padding-right: 20px;">
+      <h2 class="usefull__header" 
+      style="font-size: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 2px solid #f2d915;
+      border-bottom: 2px solid #f2d915;">#Польза</h2>
       <div class="usefull__image">
-        <a class="usefull__link" href="https://www.instagram.com/p/CTwYwM6sUSW/" target="_blank"><img src="img/ig-img.jpg" srcset="img/ig-img@2x.jpg 2x" width="570" height="374" alt="инстаграмм"></a>
+        <a class="usefull__link" href="https://www.instagram.com/p/CTwYwM6sUSW/" target="_blank"><img style="width: 100%;" src="img/ig-img.jpg" srcset="img/ig-img@2x.jpg 2x" width="570" height="374" alt="инстаграмм"></a>
       </div>
       <div class="usefull__information">
         <p class="usefull__text">Креативное предпринимательство – особенная сфера, здесь все напрямую зависит от людей, их идей, творческих стремлений и энтузиазма.</p>
@@ -74,7 +105,7 @@
         </div>
       </div>
       <div class="invitation__image">
-        <a class="invitation__link" href="https://www.crpp.ru/novosti_crpp/ostavte_zayavku_na_kurs_po_rabote_na_elektronnyih_tendernyih_ploschadkah.html" target="_blank"><img src="img/info-img.jpg" srcset="img/info-img@2x.jpg 2x" width="570" height="317" alt="информация"></a>
+        <a class="invitation__link" href="https://www.crpp.ru/novosti_crpp/ostavte_zayavku_na_kurs_po_rabote_na_elektronnyih_tendernyih_ploschadkah.html" target="_blank"><img style="width: 100%;" src="img/info-img.jpg" srcset="img/info-img@2x.jpg 2x" width="570" height="317" alt="информация"></a>
       </div>
       <div class="invitation__wrapper-bottom">
         <div class="invitation__request">
@@ -161,7 +192,7 @@
         <a class="availabilties__link" target="_blank" hraf="https://www.crpp.ru/news64/tsikl_meropriyatiy_biznes_v_internete_s_nulya_do_pervyih_zakazov.html">Подробности</a>
       </div>
       <div class="availabilties__image">
-        <a class="availabilties__link" href="https://espb.pro/" target="_blank"><img src="img/bottom-img.jpeg" srcset="img/bottom-img@2x.jpeg 2x"  width="570" height="380" alt="городской акселератор"></a>
+        <a class="availabilties__link" href="https://espb.pro/" target="_blank"><img style="width: 100%;" src="img/bottom-img.jpeg" srcset="img/bottom-img@2x.jpeg 2x"  width="570" height="380" alt="городской акселератор"></a>
       </div>
       <div class="availabilties__partners">
         <h3 class="availabilties__partner">Партнеры акселератора</h3>
@@ -185,19 +216,31 @@
     </div>
   </section>
   <section class="footer">
-    <div class="footer__inner container">
-      <p class="footer__title"> СПб ГБУ «Центр развития и поддержки предпринимательства»</p>
-      <ul class="footer__links">
-        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://www.facebook.com/crpp.ru" aria-label="facebook"><img src="img/fb-logo.png" alt="facebook" width="32" height="32"></a></li>
-        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://twitter.com/crpp_ru" aria-label="twitter"><img src="img/twitter-logo.png" alt="twitter" width="32" height="32"></a></li>
-        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://vk.com/crpp_ru" aria-label="vkontakte"><img src="img/vk-logo.png" alt="vknotakte" width="32" height="32"></a></li>
-        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://www.instagram.com/crpp.ru/" aria-label="instagramm"><img src="img/ig-logo.png" alt="instagram" width="32" height="32"></a></li>
-        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://ok.ru/group/53965952909490" aria-label="odnoklassniki"><img src="img/ok-logo.png" alt="odnoklassniki" width="32" height="32"></a></li>
-        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://www.youtube.com/crpp_ru" aria-label="youtube"><img src="img/youtube-logo.png" alt="youtube" width="32" height="32"></a></li>
-        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://t.me/crpp_spb" aria-label="telegram"><img src="img/tg-logo.png" alt="telegram" width="32" height="32"></a></li>
-        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://www.tiktok.com/@crpp_spb?" aria-label="tiktok"><img src="img/tok-logo.png" alt="tiktok" width="32" height="32"></a></li>
+    <div class="footer__inner container" 
+    style="max-width: 600px;
+      margin: 0 auto;
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #525252;">
+      <p class="footer__title" style="color: #fff; text-align: center;"> СПб ГБУ «Центр развития и поддержки предпринимательства»</p>
+      <ul class="footer__links" 
+      style="list-style: none;
+      display: flex;
+      padding-left: 0;
+      justify-content: center;
+      flex-wrap: wrap;">
+        <li style="padding-right: 10px;" class="footer__item"><a class="footer__link" traget="_blank" href="https://www.facebook.com/crpp.ru" aria-label="facebook"><img src="img/fb-logo.png" alt="facebook" width="32" height="32"></a></li>
+        <li style="padding-right: 10px;" class="footer__item"><a class="footer__link" traget="_blank" href="https://twitter.com/crpp_ru" aria-label="twitter"><img src="img/twitter-logo.png" alt="twitter" width="32" height="32"></a></li>
+        <li style="padding-right: 10px;" class="footer__item"><a class="footer__link" traget="_blank" href="https://vk.com/crpp_ru" aria-label="vkontakte"><img src="img/vk-logo.png" alt="vknotakte" width="32" height="32"></a></li>
+        <li style="padding-right: 10px;" class="footer__item"><a class="footer__link" traget="_blank" href="https://www.instagram.com/crpp.ru/" aria-label="instagramm"><img src="img/ig-logo.png" alt="instagram" width="32" height="32"></a></li>
+        <li style="padding-right: 10px;" class="footer__item"><a class="footer__link" traget="_blank" href="https://ok.ru/group/53965952909490" aria-label="odnoklassniki"><img src="img/ok-logo.png" alt="odnoklassniki" width="32" height="32"></a></li>
+        <li style="padding-right: 10px;" class="footer__item"><a class="footer__link" traget="_blank" href="https://www.youtube.com/crpp_ru" aria-label="youtube"><img src="img/youtube-logo.png" alt="youtube" width="32" height="32"></a></li>
+        <li style="padding-right: 10px;" class="footer__item"><a class="footer__link" traget="_blank" href="https://t.me/crpp_spb" aria-label="telegram"><img src="img/tg-logo.png" alt="telegram" width="32" height="32"></a></li>
+        <li style="padding-right: 10px;" class="footer__item"><a class="footer__link" traget="_blank" href="https://www.tiktok.com/@crpp_spb?" aria-label="tiktok"><img src="img/tok-logo.png" alt="tiktok" width="32" height="32"></a></li>
       </ul>
-      <p class="footer__text">Вы можете<a class="footer__link-refuse" target="_blank" href="https://archive.sendpulse.com/v/3aic/8ymou/#">отказаться от рассылки.</a>Но мы будем сожалеть об этом</p>
+      <p class="footer__text" style="color: #fff; text-align: center;">Вы можете <i><a style="text-decoration: none; color: #fff;" class="footer__link-refuse" target="_blank" href="https://archive.sendpulse.com/v/3aic/8ymou/#">отказаться от рассылки.</a></i> Но мы будем сожалеть об этом...</p>
     </div>
   </section>
 </body>
