@@ -3,112 +3,203 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Форма отправки" />
-  <meta name="keywords" content="модальное окно, форма" />
+  <meta name="description" content="Письмо" />
+  <meta name="keywords" content="письмо, рассылка" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preload" href="css/style.css" as="style" />
   <link rel="preload" href="fonts/pt-mono.woff2" as="font" />
   <link rel="stylesheet" href="css/style.css" />
+  <title>Письмо</title>
 </head>
 
 <body class="page">
-  <section class="main">
-    <div class="main__inner container">
-      <h2 class="main__title">Мои карты</h2>
-      <div class="main__cards">
-        <div class="main__card">
-          <div class="main__pictures">
-            <img class="main__image" src="img/tinkoff.png" alt="логотип банка" width="100px" height="50px">
-            <img class="main__image-logo" src="img/mastercard.jpg" alt="логотип мастеркард" width="30px" height="10px">
-          </div>
-          <p class="main__card-number">5536 91** **** 1234</p>
+  <section class="header">
+    <h1 class="visually-hidden">Бизнес в Санкт-Петербурге</h1>
+    <div class="header__inner container">
+      <h2 class="visually-hidden">Развиваем бизнес в Санкт-Петербурге</h2>
+      <div class="header__image">
+        <a class="header__link" href="https://www.crpp.ru/" target="_blank"><img src="img/top-img.jpg" srcset="img/top-img@2x.jpg 2x"  width="600" height="164" alt="заголовок с логотипами"></a>
+      </div>
+      <div class="header__information">
+        <h3 class="header__title">Уважаемые предприниматели</h3>
+        <p class="header__text">Сегодня в выпуске</p>
+        <div class="header__text-block">
+          <p class="header__title">#Польза</p>
+          <p class="header__text">10 полезных ресурсов для креативного предпринимателя</p>
+        </div>
+        <div class="header__text-block">
+          <p class="header__title">#Приглашение</p>
+          <p class="header__text">примите участие во Всероссийской переписи населения</p>
+        </div>
+        <div class="header__text-block">
+          <p class="header__title">#Образование</p>
+          <p class="header__text">ближайшие мероприятия ЦРПП</p>
+        </div>
+        <div class="header__text-block">
+          <p class="header__title">#Возможности</p>
+          <p class="header__text">стартовал прием электронных заявок на субсидии</p>
         </div>
       </div>
-      <div>
-        <button type="button" class="main__button button">Привязать еще одну</button>
       </div>
-    </div>
   </section>
-  <section class="transfer">
-    <div class="transfer__inner container">
-      <form class="transfer__form" action="https://echo.htmlacademy.ru/" method="post">
-       
-          <h2 class="transfer__header">Перевод на кошелек</h2>
-          <label class="transfer__label"> <span>Куда перевести</span>
-            <select class="transfer__select select">   
-              <option class="select__item select__item--active">Новая карта</option>
-              <option class="select__item">Новая карта</option>
-              <option class="select__item">Новая карта</option>
-              <option class="select__item">Новая карта</option>
-            </select>
-          </label>
-          <label class="transfer__label-for-input"> <span>Сколько</span>
-            <input class="transfer__summ" type="text" name="summ" id="summ" placeholder="₽"/>
-          </label>
-          <label class="transfer__label"> <span>Откуда</span>
-            <select class="transfer__select select">
-              <option class="select__item select__item--active">Тинькоф</option>
-              <option class="select__item">Тинькоф</option>
-              <option class="select__item">Тинькоф</option>
-              <option class="select__item">Тинькоф</option>
-            </select>
-          </label>
-          <button class="transfer__button button" type="submit">Сделать перевод</button>
-        </div>
-
-    </form>
-
-    </div>
-  </section>
-  <section class="form hidden">
-    <div class="form__inner container">
-      <h2 class="form__title">Привязка банковской карты</h2>  
-          <form class="form__addition" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="form__wrapper">
-              <div class="form__images">
-                <img class="form__image" src="img/mastercard.jpg" alt="мастеркард" width="30" height="20">
-                <img class="form__image" src="img/visa.jpg" alt="виза" width="30" height="20">
-                <img class="form__image" src="img/mir.jpeg" alt="мир" width="30" height="20">
-              </div>
-              <label class="form__label"> <span class="visually-hidden">Номер карты</span>
-                <input class="form__number" type="text" name="number" id="number" placeholder="Номер карты">
-              </label>
-              <div class="form__inputs">
-              <label class="form__label"> <span class="visually-hidden">Дата</span>
-                <input class="form__data" type="text" name="date" id="date" placeholder="ММ/ГГ"/>
-              </label>
-              <label class="form__label"> <span class="visually-hidden">CVC</span>
-                <div class="form__texts">
-                <p class="form__text">Три цифры</p>
-                <p class="form__text">на обороте</p>
-                </div>
-                <input class="form__cvc" type="text" name="cvc" id="cvc" placeholder="CVC"/>
-              </label>
-              </div>
-              </div>
-              <div class="form__buttons">
-                <button class="form__button form__button-cancel" type="button">Отменить</button>
-                <button class="form__button form__button-submit" type="submit" disabled>Продолжить</button>
-              </div>
-            </div>
-
-        </form>
-     </div>
-  </section>
+  <section class="usefull">
+    <div class="usefull__inner container">
+      <h2 class="usefull__header">#Польза</h2>
+      <div class="usefull__image">
+        <a class="usefull__link" href="https://www.instagram.com/p/CTwYwM6sUSW/" target="_blank"><img src="img/ig-img.jpg" srcset="img/ig-img@2x.jpg 2x" width="570" height="374" alt="инстаграмм"></a>
+      </div>
+      <div class="usefull__information">
+        <p class="usefull__text">Креативное предпринимательство – особенная сфера, здесь все напрямую зависит от людей, их идей, творческих стремлений и энтузиазма.</p>
   
-  <section class="modal hidden">
-    <div class="modal__inner">
-      <div class="modal__data">
-        <img class="modal__image" src="img/ok.png">
-        <p class="modal__title">Всё получилось</p>
-        <p class="modal__text">Через минуту ваша карта появится в кошельке - </p>
-        <p class="modal__text">вы увидите ее в разделе "Банковские карты"</p>
-        <button type="button" class="modal__button">Обратно к картам</button>
+        <p class="usefull__text">К этой области относится искусство, дизайн, архитектура и урбанистика, мода, кино, ТВ и новые медиа, музыка, компьютерная графика, разработка игр, анимация и маркетинг.</p>
+        
+        <p class="usefull__text">Центр развития креативных индустрий подготовил подборку материалов для креативных предпринимателей, где вы найдете статьи, тематические медиа, бесплатные курсы для обучения и вдохновения.</p>
+        
+        <p class="usefull__text">Как получить? Подпишитесь на наш <a class="usefull__link" target="_blank" href="https://www.instagram.com/crpp.ru/">Instagram-аккаунт</a>, поставьте в комментарии к этому <a class="usefull__link" target="_blank" href="https://www.instagram.com/p/CTwYwM6sUSW/">посту +</a>, и мы направим вам подробную информацию.</p>
       </div>
     </div>
   </section>
-  <script src="https://unpkg.com/imask"></script>
-  <script src="js/script.js"></script>
+  <section class="invitaion">
+    <div class="invitation__inner container">
+      <h2 class="usefull__header">#Приглашение</h2>
+      <div class="invitation__wrapper-top">
+        <div class="invitation__request">
+          <a class="invitation__link" href="https://www.crpp.ru/novosti_crpp/ostavte_zayavku_na_kurs_po_rabote_na_elektronnyih_tendernyih_ploschadkah.html" target="_blank">Оставьте заявку на курс по работе на электронных тендерных площадках</a>
+        </div>
+        <div class="invitation__info">
+           <p class="invitation__text">Оставить заявку можно по <a class="invitation__link" href="https://docs.google.com/forms/d/e/1FAIpQLScniTnnhfyfNFa4fYRfaAbp8Ib7MEw4kceDwdvBc__81f2aEg/viewform" target="_blank">ссылке</a>, электронной почте: <a class="invitation__link invitation__mail" href="mailto:makarova@crpp.ru" target="_blank">makarova@crpp.ru</a> с пометкой «Заявка на обучение закупкам», по телефонам: +7 (812) 372-52-60 (доб. 703), +7 962 690-07-27. </p>
+        </div>
+        <div class="invitation__details">
+          <a class="invitation__link" href="https://www.crpp.ru/novosti_crpp/ostavte_zayavku_na_kurs_po_rabote_na_elektronnyih_tendernyih_ploschadkah.html" target="_blank">Узнать подробности</a>
+        </div>
+      </div>
+      <div class="invitation__image">
+        <a class="invitation__link" href="https://www.crpp.ru/novosti_crpp/ostavte_zayavku_na_kurs_po_rabote_na_elektronnyih_tendernyih_ploschadkah.html" target="_blank"><img src="img/info-img.jpg" srcset="img/info-img@2x.jpg 2x" width="570" height="317" alt="информация"></a>
+      </div>
+      <div class="invitation__wrapper-bottom">
+        <div class="invitation__request">
+          <a class="invitation__link" href="https://www.crpp.ru/novosti_goroda/primite_uchastvuyte_vo_vserossiyskoy_perepisi_naseleniya.html" target="_blank">Примите участие во Всероссийской переписи населения</a>
+        </div>
+        <div class="invitation__info">
+           <p class="invitation__text">Двенадцатая в истории России перепись населения пройдет в новом цифровом формате. Основной акцент будет сделан на применении новых технологий:</p>
+           <ul class="invitation__list">
+             <li class="invitation__item">
+              <p class="invitaion__text">самостоятельном заполнении электронных переписных листов на портале «Госуслуги»;</p>
+             </li>
+             <li class="invitation__item">
+               <p class="invitaion__text">возможности пройти перепись на гостевых компьютерах в многофункциональных центрах предоставления государственных и муниципальных услуг (МФЦ), а также использовании переписчиками планшетов с электронными переписными листами.</p>
+             </li>
+           </ul>
+        </div>
+        <div class="invitation__details">
+          <a class="invitation__link" href="https://www.crpp.ru/novosti_goroda/primite_uchastvuyte_vo_vserossiyskoy_perepisi_naseleniya.html" target="_blank">Узнать подробности</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="education">
+    <div class="education__inner container">
+      <h2 class="usefull__header">#Образование</h2>
+      <div class="education__wrapper">
+        <div class="education__info">
+          <p class="education__text">14 сентября, 15:00 <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1130.html">курс «Государственные закупки. Последние изменения по Закону № 44-ФЗ и № 223-ФЗ»</a></p>
+        </div>
+        <div class="education__info">
+          <p class="education__text">14 сентября, 15:00 <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1136.html">семинар «Модель GROW. Как достигать целей быстрее»</a></p>
+        </div>
+        <div class="education__info">
+          <p class="education__text">15 сентября, 11:00 курс «Защита интеллектуальной собственности», <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1143.html">занятие 1 «Товарные знаки: практические рекомендации по регистрации»</a></p>
+        </div>
+        <div class="education__info">
+          <p class="education__text">15 сентября, 14:00 <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1147.html">онлайн-семинар «Творческие кластеры как импульс развития креативной экономики»</a></p>
+        </div>
+        <div class="education__info">
+          <p class="education__text">15 сентября, 15:00 семинар <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1137.html">«Эмоции в бизнесе. Как, управляя эмоциями, научиться заключать сделки на крупные чеки?»</a></p>
+        </div>
+        <div class="education__info">
+          <p class="education__text">16 сентября, 15:00 семинар <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1138.html">«От профессионального выгорания к профессиональному здоровью. Технология управления стрессом»</a></p>
+        </div>
+        <div class="education__info">
+          <p class="education__text">16 сентября, 11:00 вебинар <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1132.html">«Эффективный выход из режима ограничений для предприятий сферы услуг»</a></p>
+        </div>
+        <div class="education__info">
+          <p class="education__text">22 - 29 сентября <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1135.html">практический курс «Школа франчайзинга»</a></p>
+        </div>
+        <div class="education__bottom">
+          <p class="education__text">Участие в мероприятиях бесплатное.</p>
+          <p class="education__text">Предварительная регистрация обязательна.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="availabilites">
+    <div class="availabilties__inner container">
+      <h2 class="availabilties__header">#Возможности</h2>
+      <div class="availabilties__about">
+        <div class="availabilties__request">
+          <a class="availabilties__link" href="https://www.crpp.ru/novosti_business/startuet_priem_zayavok_na_subsidii_dlya_promyishlennyih_predpriyatiy_.html" target="_blank">Стартовал прием электронных заявок на субсидии для промышленных предприятий</a>
+        </div>
+        <div class="availabilties__info">
+           <p class="availabilties__text">Комитет по промышленной политике, инновациям и торговле Санкт-Петербурга начинает прием заявлений и документов от промышленных предприятий Петербурга в целях возмещения затрат, связанных с:</p>
+           <p class="availabilties__text">- участием в международных выставках и ярмарках;</p>
+           <p class="availabilties__text">- выполнением требований законодательства страны-импортера,</p>
+           <p class="availabilties__text">являющихся необходимыми для экспорта товаров (работ, услуг).</p>
+           <p class="availabilties__text">Срок окончания приема заявок – <span>30 ноября 2021 года.</span></p>
+        </div>
+        <div class="availabilties__details">
+          <a class="availabilties__link" href="https://www.crpp.ru/novosti_business/startuet_priem_zayavok_na_subsidii_dlya_promyishlennyih_predpriyatiy_.html" target="_blank">Узнать подробности</a>
+        </div>
+      </div>
+      <div class="availabilties__forum">
+        <p class="availabilties__title">15-16 октября пройдет «Петербургский Форум Предпринимателей. Осень 2021»</p>
+        <p class="availabilties__text">Ключевая тема форума «Роль предпринимательских сообществ в современном бизнесе». </p>
+        <a class="availabilties__link" target="_blank" href="https://www.crpp.ru/news64/1516_oktyabrya_sanktpeterburge_proydet_peterburgskiy_forum_predprinimateley_osen_2021.html">Узнать подробности и зарегистрироваться</a>
+      </div>
+      <div class="availabilties__business">
+        <a class="availabilties__link" target="_blank" href="https://www.crpp.ru/news64/tsikl_meropriyatiy_biznes_v_internete_s_nulya_do_pervyih_zakazov.html">Цикл мероприятий «Бизнес в интернете с нуля до первых заказов»</a>
+        <p class="availabilties__text">Образовательные семинары пройдут с 22 сентября по 10 октября. </p>
+        <a class="availabilties__link" target="_blank" hraf="https://www.crpp.ru/news64/tsikl_meropriyatiy_biznes_v_internete_s_nulya_do_pervyih_zakazov.html">Подробности</a>
+      </div>
+      <div class="availabilties__image">
+        <a class="availabilties__link" href="https://espb.pro/" target="_blank"><img src="img/bottom-img.jpeg" srcset="img/bottom-img@2x.jpeg 2x"  width="570" height="380" alt="городской акселератор"></a>
+      </div>
+      <div class="availabilties__partners">
+        <h3 class="availabilties__partner">Партнеры акселератора</h3>
+        <p class="availabilties__text"><a class="availabilties__link">Бизнес ВКонтакте</a> – платформа для тех, кто хочет создавать или развивает своё бизнес-сообщество ВКонтакте. На ней предприниматели могут продвигать свои товары и услуги при помощи различных инструментов: формировать страницы бизнеса, сайт из сообщества, подключать магазин или запускать рекламу. Например, реклама ВКонтакте поможет представителям любых сфер бизнеса найти клиентов и увеличить продажи. Умные алгоритмы социальной сети покажут объявления именно тем пользователям, которые с большей вероятностью ими заинтересуются, а следить за прогрессом рекламной кампании пользователи могут при помощи статистики, предоставляемой в онлайн-режиме.</p>
+      </div>
+      <ul class="availabilties__list">
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/elama-logo.jpg" width="120" height="60" alt="логотип elama"></li>
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/insales-logo.jpg" width="120" height="60" alt="логотип insales"></li>
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/unknown-logo.jpg" width="120" height="60" alt="логотип unknown"></li>
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/hh-logo.jpg" width="120" height="60" alt="логотип hh"></li>
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/electro-logo.jpg" width="120" height="60" alt="логотип электроопт"></li>
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/bitrix-logo.jpg" width="120" height="60" alt="логотип битрикс"></li>
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/kontur-logo.jpg" width="120" height="60" alt="логотип контур"></li>
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/1c-logo.png" width="120" height="60" alt="логотип 1С"></li>
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/pruff-logo.jpg" width="120" height="60" alt="логотип пруф"></li>
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/sber-logo.jpg" width="120" height="60" alt="логотип сбер"></li>
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/logic-logo.jpg" width="120" height="60" alt="логотип маркетинг"></li>
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/mail-logo.jpg" width="120" height="60" alt="логотип мейлру"></li>
+        <li class="availabilties__item"><img class="availabilties__logo" src="img/uds-logo.png" width="120" height="60" alt="логотип удс"></li>
+      </ul>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="footer__inner container">
+      <p class="footer__title"> СПб ГБУ «Центр развития и поддержки предпринимательства»</p>
+      <ul class="footer__links">
+        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://www.facebook.com/crpp.ru" aria-label="facebook"><img src="img/fb-logo.png" alt="facebook" width="32" height="32"></a></li>
+        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://twitter.com/crpp_ru" aria-label="twitter"><img src="img/twitter-logo.png" alt="twitter" width="32" height="32"></a></li>
+        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://vk.com/crpp_ru" aria-label="vkontakte"><img src="img/vk-logo.png" alt="vknotakte" width="32" height="32"></a></li>
+        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://www.instagram.com/crpp.ru/" aria-label="instagramm"><img src="img/ig-logo.png" alt="instagram" width="32" height="32"></a></li>
+        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://ok.ru/group/53965952909490" aria-label="odnoklassniki"><img src="img/ok-logo.png" alt="odnoklassniki" width="32" height="32"></a></li>
+        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://www.youtube.com/crpp_ru" aria-label="youtube"><img src="img/youtube-logo.png" alt="youtube" width="32" height="32"></a></li>
+        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://t.me/crpp_spb" aria-label="telegram"><img src="img/tg-logo.png" alt="telegram" width="32" height="32"></a></li>
+        <li class="footer__item"><a class="footer__link" traget="_blank" href="https://www.tiktok.com/@crpp_spb?" aria-label="tiktok"><img src="img/tok-logo.png" alt="tiktok" width="32" height="32"></a></li>
+      </ul>
+      <p class="footer__text">Вы можете<a class="footer__link-refuse" target="_blank" href="https://archive.sendpulse.com/v/3aic/8ymou/#">отказаться от рассылки.</a>Но мы будем сожалеть об этом</p>
+    </div>
+  </section>
 </body>
 
 </html>
