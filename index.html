@@ -12,15 +12,25 @@
   <title>Письмо</title>
 </head>
 
-<body class="page" 
-style="font-family: 'PTMono', 'Arial', sans-serif;
-font-size: 16px;
-line-height: 24px;
-font-weight: 400;
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-background-color: #f2d915;">
+<body class="page">
+<style scoped>
+  .page {
+    font-family: 'PTMono', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f2d915;
+  }
+
+  @media (max-width: 600px) {
+    .page {
+      margin: 0;
+    }
+  }
+  </style>
   <section class="header">
     <div class="header__inner container" 
     style="display: flex;
@@ -28,9 +38,14 @@ background-color: #f2d915;">
       max-width: 600px;
       margin: 0 auto;
       background-color: #fff;
-      padding-bottom: 10px;">
+      padding-bottom: 20px;">
       <div class="header__image">
-        <a class="header__link" href="https://www.crpp.ru/" target="_blank"><img style="width: 100%;" src="img/top-img.jpg" srcset="img/top-img@2x.jpg 2x"  width="600" height="164" alt="заголовок с логотипами"></a>
+        <a class="header__link" href="https://www.crpp.ru/" target="_blank">
+          <picture>
+          <source media="(max-width: 600px)" srcset="img/top-img-less600px.jpg img/top-img-less600px@2x.jpg 2x" />
+          <img style="width: 100%;" src="img/top-img.jpg" srcset="img/top-img@2x.jpg 2x"  width="600" height="164" alt="заголовок с логотипами">
+          </picture>
+        </a>
       </div>
       <div class="header__information" style="padding: 0 20px;">
         <h3 class="header__title" 
@@ -39,33 +54,33 @@ background-color: #f2d915;">
         Уважаемые предприниматели!</h3>
         <p class="header__text"  style="margin-bottom: 10px;">Сегодня в выпуске</p>
         <div class="header__text-block" style="display: flex; flex-wrap: wrap;">
-          <p class="header__title" style="margin-bottom: 10px; margin-top: 0;"><b>#Польза:</b></p>
+          <p class="header__title" style="margin-bottom: 10px; margin-top: 0; padding-right: 10px;"><b>#Польза:</b></p>
           <p class="header__text" style="margin-bottom: 10px; margin-top: 0;">10 полезных ресурсов для креативного предпринимателя</p>
         </div>
         <div class="header__text-block" style="display: flex; flex-wrap: wrap;">
-          <p class="header__title" style="margin-bottom: 10px; margin-top: 0;"><b>#Приглашение:</b></p>
+          <p class="header__title" style="margin-bottom: 10px; margin-top: 0; padding-right: 10px;"><b>#Приглашение:</b></p>
           <p class="header__text" style="margin-bottom: 10px; margin-top: 0;">примите участие во Всероссийской переписи населения</p>
         </div>
         <div class="header__text-block" style="display: flex; flex-wrap: wrap;">
-          <p class="header__title" style="margin-bottom: 10px; margin-top: 0;"><b>#Образование:</b></p>
+          <p class="header__title" style="margin-bottom: 10px; margin-top: 0; padding-right: 10px;"><b>#Образование:</b></p>
           <p class="header__text" style="margin-bottom: 10px; margin-top: 0;">ближайшие мероприятия ЦРПП</p>
         </div>
         <div class="header__text-block" style="display: flex; flex-wrap: wrap;">
-          <p class="header__title" style="margin-bottom: 10px; margin-top: 0;"><b>#Возможности:</b></p>
+          <p class="header__title" style="margin-bottom: 10px; margin-top: 0; padding-right: 10px;"><b>#Возможности:</b></p>
           <p class="header__text" style="margin-bottom: 10px; margin-top: 0;">стартовал прием электронных заявок на субсидии</p>
         </div>
       </div>
       </div>
   </section>
-  <section class="usefull"
-   style="display: flex;
-      flex-direction: column;
-      max-width: 600px;
-      margin: 0 auto;
-      background-color: #fff;">
+  <section class="usefull">
     <div class="usefull__inner container"
-    style="padding-left: 20px;
-    padding-right: 20px;">
+    style="display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #fff;">
       <h2 class="usefull__header" 
       style="font-size: 24px;
       text-align: center;
@@ -73,43 +88,70 @@ background-color: #f2d915;">
       margin-top: 0;
       margin-bottom: 0;
       padding-top: 10px;
-      padding-bottom: 10px;
       border-top: 2px solid #f2d915;
-      border-bottom: 2px solid #f2d915;">#Польза</h2>
+      border-bottom: 2px solid #f2d915;
+      padding-bottom: 20px;">#Польза</h2>
       <div class="usefull__image">
         <a class="usefull__link" href="https://www.instagram.com/p/CTwYwM6sUSW/" target="_blank"><img style="width: 100%;" src="img/ig-img.jpg" srcset="img/ig-img@2x.jpg 2x" width="570" height="374" alt="инстаграмм"></a>
       </div>
-      <div class="usefull__information">
+      <div class="usefull__information" 
+      style="padding-right: 20px;
+      padding-bottom: 20px;">
         <p class="usefull__text">Креативное предпринимательство – особенная сфера, здесь все напрямую зависит от людей, их идей, творческих стремлений и энтузиазма.</p>
   
         <p class="usefull__text">К этой области относится искусство, дизайн, архитектура и урбанистика, мода, кино, ТВ и новые медиа, музыка, компьютерная графика, разработка игр, анимация и маркетинг.</p>
         
         <p class="usefull__text">Центр развития креативных индустрий подготовил подборку материалов для креативных предпринимателей, где вы найдете статьи, тематические медиа, бесплатные курсы для обучения и вдохновения.</p>
         
-        <p class="usefull__text">Как получить? Подпишитесь на наш <a class="usefull__link" target="_blank" href="https://www.instagram.com/crpp.ru/">Instagram-аккаунт</a>, поставьте в комментарии к этому <a class="usefull__link" target="_blank" href="https://www.instagram.com/p/CTwYwM6sUSW/">посту +</a>, и мы направим вам подробную информацию.</p>
+        <p class="usefull__text" style="margin-bottom: 0;">Как получить? Подпишитесь на наш <a style="text-decoration: none;
+          color: #de144a;" class="usefull__link" target="_blank" href="https://www.instagram.com/crpp.ru/"><b>Instagram-аккаунт</b></a>, поставьте в комментарии к этому <a style="text-decoration: none;
+          color: #de144a;" class="usefull__link" target="_blank" href="https://www.instagram.com/p/CTwYwM6sUSW/"><b>посту +</b></a>, и мы направим вам подробную информацию.</p>
       </div>
     </div>
   </section>
   <section class="invitaion">
-    <div class="invitation__inner container">
-      <h2 class="usefull__header">#Приглашение</h2>
+    <div class="invitation__inner container"
+    style="display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff;">
+      <h2 class="usefull__header" 
+      style="font-size: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 2px solid #f2d915;
+      border-bottom: 2px solid #f2d915;">#Приглашение</h2>
       <div class="invitation__wrapper-top">
         <div class="invitation__request">
-          <a class="invitation__link" href="https://www.crpp.ru/novosti_crpp/ostavte_zayavku_na_kurs_po_rabote_na_elektronnyih_tendernyih_ploschadkah.html" target="_blank">Оставьте заявку на курс по работе на электронных тендерных площадках</a>
+          <a class="invitation__link" style="text-decoration: none;
+          color: #de144a;" href="https://www.crpp.ru/novosti_crpp/ostavte_zayavku_na_kurs_po_rabote_na_elektronnyih_tendernyih_ploschadkah.html" target="_blank"><b>Оставьте заявку на курс по работе на электронных тендерных площадках</b></a>
         </div>
         <div class="invitation__info">
-           <p class="invitation__text">Оставить заявку можно по <a class="invitation__link" href="https://docs.google.com/forms/d/e/1FAIpQLScniTnnhfyfNFa4fYRfaAbp8Ib7MEw4kceDwdvBc__81f2aEg/viewform" target="_blank">ссылке</a>, электронной почте: <a class="invitation__link invitation__mail" href="mailto:makarova@crpp.ru" target="_blank">makarova@crpp.ru</a> с пометкой «Заявка на обучение закупкам», по телефонам: +7 (812) 372-52-60 (доб. 703), +7 962 690-07-27. </p>
+           <p class="invitation__text">Оставить заявку можно по <a style="text-decoration: none;
+            color: #de144a;" class="invitation__link" href="https://docs.google.com/forms/d/e/1FAIpQLScniTnnhfyfNFa4fYRfaAbp8Ib7MEw4kceDwdvBc__81f2aEg/viewform" target="_blank"><b>ссылке</b></a>, электронной почте: <a style="text-decoration: none;
+          color: #de144a;" class="invitation__link invitation__mail" href="mailto:makarova@crpp.ru" target="_blank">makarova@crpp.ru</a> с пометкой «Заявка на обучение закупкам», по телефонам: +7 (812) 372-52-60 (доб. 703), +7 962 690-07-27. </p>
         </div>
-        <div class="invitation__details">
-          <a class="invitation__link" href="https://www.crpp.ru/novosti_crpp/ostavte_zayavku_na_kurs_po_rabote_na_elektronnyih_tendernyih_ploschadkah.html" target="_blank">Узнать подробности</a>
+        <div class="invitation__details" 
+        style="margin-bottom: 30px;">
+          <a style="text-decoration: none;
+          color: #de144a;
+          margin-bottom: 40px;" class="invitation__link" href="https://www.crpp.ru/novosti_crpp/ostavte_zayavku_na_kurs_po_rabote_na_elektronnyih_tendernyih_ploschadkah.html" target="_blank"><b>Узнать подробности</b></a>
         </div>
       </div>
-      <div class="invitation__image">
+      <div class="invitation__image" style="margin-bottom: 30px;">
         <a class="invitation__link" href="https://www.crpp.ru/novosti_crpp/ostavte_zayavku_na_kurs_po_rabote_na_elektronnyih_tendernyih_ploschadkah.html" target="_blank"><img style="width: 100%;" src="img/info-img.jpg" srcset="img/info-img@2x.jpg 2x" width="570" height="317" alt="информация"></a>
       </div>
       <div class="invitation__wrapper-bottom">
-        <div class="invitation__request">
-          <a class="invitation__link" href="https://www.crpp.ru/novosti_goroda/primite_uchastvuyte_vo_vserossiyskoy_perepisi_naseleniya.html" target="_blank">Примите участие во Всероссийской переписи населения</a>
+        <div class="invitation__request" style="margin-bottom: 20px;">
+          <a class="invitation__link" style="text-decoration: none;
+          color: #de144a;" href="https://www.crpp.ru/novosti_goroda/primite_uchastvuyte_vo_vserossiyskoy_perepisi_naseleniya.html" target="_blank"><b>Примите участие во Всероссийской переписи населения</b></a>
         </div>
         <div class="invitation__info">
            <p class="invitation__text">Двенадцатая в истории России перепись населения пройдет в новом цифровом формате. Основной акцент будет сделан на применении новых технологий:</p>
@@ -122,109 +164,187 @@ background-color: #f2d915;">
              </li>
            </ul>
         </div>
-        <div class="invitation__details">
-          <a class="invitation__link" href="https://www.crpp.ru/novosti_goroda/primite_uchastvuyte_vo_vserossiyskoy_perepisi_naseleniya.html" target="_blank">Узнать подробности</a>
+        <div class="invitation__details" style="margin-bottom: 20px;">
+          <a class="invitation__link" style="text-decoration: none;
+          color: #de144a;" href="https://www.crpp.ru/novosti_goroda/primite_uchastvuyte_vo_vserossiyskoy_perepisi_naseleniya.html" target="_blank"><b>Узнать подробности</b></a>
         </div>
       </div>
     </div>
   </section>
   <section class="education">
-    <div class="education__inner container">
-      <h2 class="usefull__header">#Образование</h2>
+    <div class="education__inner container" 
+    style="padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    margin: 0 auto;
+    background-color: #fff;">
+      <h2 class="usefull__header" 
+      style="font-size: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 2px solid #f2d915;
+      border-bottom: 2px solid #f2d915;">#Образование</h2>
       <div class="education__wrapper">
         <div class="education__info">
-          <p class="education__text">14 сентября, 15:00 <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1130.html">курс «Государственные закупки. Последние изменения по Закону № 44-ФЗ и № 223-ФЗ»</a></p>
+          <p class="education__text" style="margin-top: 0;">14 сентября, 15:00 <a style="text-decoration: none;
+            color: #de144a;" class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1130.html"><b>курс «Государственные закупки. Последние изменения по Закону № 44-ФЗ и № 223-ФЗ»</b></a></p>
         </div>
         <div class="education__info">
-          <p class="education__text">14 сентября, 15:00 <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1136.html">семинар «Модель GROW. Как достигать целей быстрее»</a></p>
+          <p class="education__text">14 сентября, 15:00 <a style="text-decoration: none;
+            color: #de144a;" class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1136.html"><b>семинар «Модель GROW. Как достигать целей быстрее»</b></a></p>
         </div>
         <div class="education__info">
-          <p class="education__text">15 сентября, 11:00 курс «Защита интеллектуальной собственности», <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1143.html">занятие 1 «Товарные знаки: практические рекомендации по регистрации»</a></p>
+          <p class="education__text">15 сентября, 11:00 курс «Защита интеллектуальной собственности», <a style="text-decoration: none;
+            color: #de144a;" class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1143.html"><b>занятие 1 «Товарные знаки: практические рекомендации по регистрации»</b></a></p>
         </div>
         <div class="education__info">
-          <p class="education__text">15 сентября, 14:00 <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1147.html">онлайн-семинар «Творческие кластеры как импульс развития креативной экономики»</a></p>
+          <p class="education__text">15 сентября, 14:00 <a style="text-decoration: none;
+            color: #de144a;" class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1147.html"><b>онлайн-семинар «Творческие кластеры как импульс развития креативной экономики»</b></a></p>
         </div>
         <div class="education__info">
-          <p class="education__text">15 сентября, 15:00 семинар <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1137.html">«Эмоции в бизнесе. Как, управляя эмоциями, научиться заключать сделки на крупные чеки?»</a></p>
+          <p class="education__text">15 сентября, 15:00 семинар <a style="text-decoration: none;
+            color: #de144a;" class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1137.html"><b>«Эмоции в бизнесе. Как, управляя эмоциями, научиться заключать сделки на крупные чеки?»</b></a></p>
         </div>
         <div class="education__info">
-          <p class="education__text">16 сентября, 15:00 семинар <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1138.html">«От профессионального выгорания к профессиональному здоровью. Технология управления стрессом»</a></p>
+          <p class="education__text">16 сентября, 15:00 семинар <a style="text-decoration: none;
+            color: #de144a;" class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1138.html"><b>«От профессионального выгорания к профессиональному здоровью. Технология управления стрессом»</b></a></p>
         </div>
         <div class="education__info">
-          <p class="education__text">16 сентября, 11:00 вебинар <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1132.html">«Эффективный выход из режима ограничений для предприятий сферы услуг»</a></p>
+          <p class="education__text">16 сентября, 11:00 вебинар <a style="text-decoration: none;
+            color: #de144a;" class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1132.html"><b>«Эффективный выход из режима ограничений для предприятий сферы услуг»</b></a></p>
         </div>
         <div class="education__info">
-          <p class="education__text">22 - 29 сентября <a class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1135.html">практический курс «Школа франчайзинга»</a></p>
+          <p class="education__text">22 - 29 сентября <a style="text-decoration: none;
+            color: #de144a;" class="education__link" target="_blank" href="https://www.crpp.ru/meropriyatiya_all/meropriyatiya_vse/events1135.html"><b>практический курс «Школа франчайзинга»</b></a></p>
         </div>
         <div class="education__bottom">
-          <p class="education__text">Участие в мероприятиях бесплатное.</p>
-          <p class="education__text">Предварительная регистрация обязательна.</p>
+          <p class="education__text" style="margin-bottom: 0;"><b>Участие в мероприятиях бесплатное.</b></p>
+          <p class="education__text" style="margin-top: 0;"><b>Предварительная регистрация обязательна.</b></p>
         </div>
       </div>
     </div>
   </section>
   <section class="availabilites">
-    <div class="availabilties__inner container">
-      <h2 class="availabilties__header">#Возможности</h2>
-      <div class="availabilties__about">
-        <div class="availabilties__request">
-          <a class="availabilties__link" href="https://www.crpp.ru/novosti_business/startuet_priem_zayavok_na_subsidii_dlya_promyishlennyih_predpriyatiy_.html" target="_blank">Стартовал прием электронных заявок на субсидии для промышленных предприятий</a>
+    <div class="availabilties__inner container" 
+    style="display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;">
+      <h2 class="availabilties__header"
+      style="font-size: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 2px solid #f2d915;
+      border-bottom: 2px solid #f2d915;">#Возможности</h2>
+      <div class="availabilties__about" style="border-bottom: 2px solid #f2d915;">
+        <div class="availabilties__request" style="margin-bottom: 15px;">
+          <a style="text-decoration: none;
+          color: #de144a;" class="availabilties__link" href="https://www.crpp.ru/novosti_business/startuet_priem_zayavok_na_subsidii_dlya_promyishlennyih_predpriyatiy_.html" target="_blank"><b>Стартовал прием электронных заявок на субсидии для промышленных предприятий</b></a>
         </div>
         <div class="availabilties__info">
-           <p class="availabilties__text">Комитет по промышленной политике, инновациям и торговле Санкт-Петербурга начинает прием заявлений и документов от промышленных предприятий Петербурга в целях возмещения затрат, связанных с:</p>
-           <p class="availabilties__text">- участием в международных выставках и ярмарках;</p>
-           <p class="availabilties__text">- выполнением требований законодательства страны-импортера,</p>
-           <p class="availabilties__text">являющихся необходимыми для экспорта товаров (работ, услуг).</p>
-           <p class="availabilties__text">Срок окончания приема заявок – <span>30 ноября 2021 года.</span></p>
+           <p class="availabilties__text" style="margin-bottom: 0; margin-top: 0;">Комитет по промышленной политике, инновациям и торговле Санкт-Петербурга начинает прием заявлений и документов от промышленных предприятий Петербурга в целях возмещения затрат, связанных с:</p>
+           <p class="availabilties__text" style="margin-bottom: 0; margin-top: 0;">- участием в международных выставках и ярмарках;</p>
+           <p class="availabilties__text" style="margin-bottom: 0; margin-top: 0;">- выполнением требований законодательства страны-импортера,</p>
+           <p class="availabilties__text" style="margin-bottom: 0; margin-top: 0;">являющихся необходимыми для экспорта товаров (работ, услуг).</p>
+           <p class="availabilties__text">Срок окончания приема заявок – <span><b>30 ноября 2021 года.</b></span></p>
         </div>
-        <div class="availabilties__details">
-          <a class="availabilties__link" href="https://www.crpp.ru/novosti_business/startuet_priem_zayavok_na_subsidii_dlya_promyishlennyih_predpriyatiy_.html" target="_blank">Узнать подробности</a>
+        <div class="availabilties__details" style="margin-bottom: 15px;">
+          <a style="text-decoration: none;
+          color: #de144a;" class="availabilties__link" href="https://www.crpp.ru/novosti_business/startuet_priem_zayavok_na_subsidii_dlya_promyishlennyih_predpriyatiy_.html" target="_blank"><b>Узнать подробности</b></a>
         </div>
       </div>
-      <div class="availabilties__forum">
-        <p class="availabilties__title">15-16 октября пройдет «Петербургский Форум Предпринимателей. Осень 2021»</p>
+      <div class="availabilties__forum" style="margin-bottom: 15px;">
+        <p class="availabilties__title"><b>15-16 октября пройдет «Петербургский Форум Предпринимателей. Осень 2021»</b></p>
         <p class="availabilties__text">Ключевая тема форума «Роль предпринимательских сообществ в современном бизнесе». </p>
-        <a class="availabilties__link" target="_blank" href="https://www.crpp.ru/news64/1516_oktyabrya_sanktpeterburge_proydet_peterburgskiy_forum_predprinimateley_osen_2021.html">Узнать подробности и зарегистрироваться</a>
+        <a style="text-decoration: none;
+        color: #de144a;" class="availabilties__link" target="_blank" href="https://www.crpp.ru/news64/1516_oktyabrya_sanktpeterburge_proydet_peterburgskiy_forum_predprinimateley_osen_2021.html"><b>Узнать подробности и зарегистрироваться</b></a>
       </div>
-      <div class="availabilties__business">
-        <a class="availabilties__link" target="_blank" href="https://www.crpp.ru/news64/tsikl_meropriyatiy_biznes_v_internete_s_nulya_do_pervyih_zakazov.html">Цикл мероприятий «Бизнес в интернете с нуля до первых заказов»</a>
+      <div class="availabilties__business" style="border-top: 2px solid #f2d915; margin-bottom: 20px;">
+        <div class="availabilties__details" style="margin-top: 15px;">
+        <a style="text-decoration: none;
+        color: #de144a;" class="availabilties__link" target="_blank" href="https://www.crpp.ru/news64/tsikl_meropriyatiy_biznes_v_internete_s_nulya_do_pervyih_zakazov.html"><b>Цикл мероприятий «Бизнес в интернете с нуля до первых заказов»</b></a>
+        </div>
         <p class="availabilties__text">Образовательные семинары пройдут с 22 сентября по 10 октября. </p>
-        <a class="availabilties__link" target="_blank" hraf="https://www.crpp.ru/news64/tsikl_meropriyatiy_biznes_v_internete_s_nulya_do_pervyih_zakazov.html">Подробности</a>
+        <a style="text-decoration: none;
+        color: #de144a;" class="availabilties__link" target="_blank" href="https://www.crpp.ru/news64/tsikl_meropriyatiy_biznes_v_internete_s_nulya_do_pervyih_zakazov.html"><b>Подробности</b></a>
       </div>
       <div class="availabilties__image">
         <a class="availabilties__link" href="https://espb.pro/" target="_blank"><img style="width: 100%;" src="img/bottom-img.jpeg" srcset="img/bottom-img@2x.jpeg 2x"  width="570" height="380" alt="городской акселератор"></a>
       </div>
       <div class="availabilties__partners">
-        <h3 class="availabilties__partner">Партнеры акселератора</h3>
-        <p class="availabilties__text"><a class="availabilties__link">Бизнес ВКонтакте</a> – платформа для тех, кто хочет создавать или развивает своё бизнес-сообщество ВКонтакте. На ней предприниматели могут продвигать свои товары и услуги при помощи различных инструментов: формировать страницы бизнеса, сайт из сообщества, подключать магазин или запускать рекламу. Например, реклама ВКонтакте поможет представителям любых сфер бизнеса найти клиентов и увеличить продажи. Умные алгоритмы социальной сети покажут объявления именно тем пользователям, которые с большей вероятностью ими заинтересуются, а следить за прогрессом рекламной кампании пользователи могут при помощи статистики, предоставляемой в онлайн-режиме.</p>
+        <h3 class="availabilties__partner" style="font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding-top: 10px;">Партнеры акселератора</h3>
+        <p class="availabilties__text" style="font-size: 14px; font-weight: 400; line-height: 20px;"><a style="text-decoration: none;
+          color: #de144a;" class="availabilties__link" href="https://vk.com/business" aria-label="вконтакте"><b>Бизнес ВКонтакте</b></a> – платформа для тех, кто хочет создавать или развивает своё бизнес-сообщество ВКонтакте. На ней предприниматели могут продвигать свои товары и услуги при помощи различных инструментов: формировать страницы бизнеса, сайт из сообщества, подключать магазин или запускать рекламу. Например, реклама ВКонтакте поможет представителям любых сфер бизнеса найти клиентов и увеличить продажи. Умные алгоритмы социальной сети покажут объявления именно тем пользователям, которые с большей вероятностью ими заинтересуются, а следить за прогрессом рекламной кампании пользователи могут при помощи статистики, предоставляемой в онлайн-режиме.</p>
       </div>
       <ul class="availabilties__list">
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/elama-logo.jpg" width="120" height="60" alt="логотип elama"></li>
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/insales-logo.jpg" width="120" height="60" alt="логотип insales"></li>
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/unknown-logo.jpg" width="120" height="60" alt="логотип unknown"></li>
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/hh-logo.jpg" width="120" height="60" alt="логотип hh"></li>
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/electro-logo.jpg" width="120" height="60" alt="логотип электроопт"></li>
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/bitrix-logo.jpg" width="120" height="60" alt="логотип битрикс"></li>
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/kontur-logo.jpg" width="120" height="60" alt="логотип контур"></li>
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/1c-logo.png" width="120" height="60" alt="логотип 1С"></li>
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/pruff-logo.jpg" width="120" height="60" alt="логотип пруф"></li>
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/sber-logo.jpg" width="120" height="60" alt="логотип сбер"></li>
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/logic-logo.jpg" width="120" height="60" alt="логотип маркетинг"></li>
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/mail-logo.jpg" width="120" height="60" alt="логотип мейлру"></li>
-        <li class="availabilties__item"><img class="availabilties__logo" src="img/uds-logo.png" width="120" height="60" alt="логотип удс"></li>
+        <li class="availabilties__item"><a href="https://elama.ru" class="availabilties__link" aria-label="логотип elama"><img class="availabilties__logo" src="img/elama-logo.jpg" width="120" height="60" alt="логотип elama"></a></li>
+        <li class="availabilties__item"><a href="https://www.insales.ru/" class="availabilties__link" aria-label="логотип insales"><img class="availabilties__logo" src="img/insales-logo.jpg" width="120" height="60" alt="логотип insales"></a></li>
+        <li class="availabilties__item"><a href="https://www.saprgrazia.com/" class="availabilties__link" aria-label="логотип unknown"><img class="availabilties__logo" src="img/unknown-logo.jpg" width="120" height="60" alt="логотип unknown"></a></li>
+        <li class="availabilties__item"><a href="https://www.hh.ru/" class="availabilties__link" aria-label="логотип headhunter"><img class="availabilties__logo" src="img/hh-logo.jpg" width="120" height="60" alt="логотип hh"></a></li>
       </ul>
+      <ul class="availabilties__list">
+        <li class="availabilties__item"><a href="https://electro-opt.com" class="availabilties__link" aria-label="логотип electro"><img class="availabilties__logo" src="img/electro-logo.jpg" width="120" height="60" alt="логотип электроопт"></a></li>
+        <li class="availabilties__item"><a href="https://www.bitrix24.ru" class="availabilties__link" aria-label="логотип bitrix"><img class="availabilties__logo" src="img/bitrix-logo.jpg" width="120" height="60" alt="логотип битрикс"></a></li>
+        <li class="availabilties__item"><a href="https://kontur.ru/" class="availabilties__link" aria-label="логотип kontur"><img class="availabilties__logo" src="img/kontur-logo.jpg" width="120" height="60" alt="логотип контур"></a></li>
+        <li class="availabilties__item"><a href="https://1c.ru/" class="availabilties__link" aria-label="логотип 1C"><img class="availabilties__logo" src="img/1c-logo.png" width="120" height="60" alt="логотип 1С"></a></li>
+      </ul>
+      <ul class="availabilties__list">
+        <li class="availabilties__item"><a href="https://pruffme.com/" class="availabilties__link" aria-label="логотип pruff"><img class="availabilties__logo" src="img/pruff-logo.jpg" width="120" height="60" alt="логотип пруф"></a></li>
+        <li class="availabilties__item"><a href="https://dasreda.ru/premium" class="availabilties__link" aria-label="логотип sber"><img class="availabilties__logo" src="img/sber-logo.jpg" width="120" height="60" alt="логотип сбер"></a></li>
+        <li class="availabilties__item"><a href="https://www.marketing-logic.ru/" class="availabilties__link" aria-label="логотип marketing"><img class="availabilties__logo" src="img/logic-logo.jpg" width="120" height="60" alt="логотип маркетинг"></a></li>
+        <li class="availabilties__item"><a href="https://corp.mail.ru/ru/company/business/" class="availabilties__link" aria-label="логотип mailru"><img class="availabilties__logo" src="img/mail-logo.jpg" width="120" height="60" alt="логотип мейлру"></a></li>
+      </ul>
+      <ul class="availabilties__list">
+        <li style="grid-column-start: 4;" class="availabilties__item availabilites__item-last" ><a href="https://uds.app/?ref=5802599" class="availabilties__link" aria-label="логотип uds"><img class="availabilties__logo" src="img/uds-logo.png" width="54" height="64" alt="логотип удс"></a></li>
+      </ul >
+      
+      <style scoped>
+        .availabilties__list {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+          background-color: #fff;
+          list-style: none;
+          padding-left: 0;
+          justify-items: center;
+        }
+
+        @media (max-width: 599px) {
+          .availabilties__list {
+            display: none;
+          }
+        }
+        </style>    
+ 
     </div>
   </section>
   <section class="footer">
     <div class="footer__inner container" 
-    style="max-width: 600px;
+    style="max-width: 560px;
       margin: 0 auto;
-      padding: 0 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: #525252;">
-      <p class="footer__title" style="color: #fff; text-align: center;"> СПб ГБУ «Центр развития и поддержки предпринимательства»</p>
+      background-color: #525252;
+      padding: 20px;">
+      <p class="footer__title" style="color: #fff; text-align: center; font-weight: 400;"> СПб ГБУ «Центр развития и поддержки предпринимательства»</p>
       <ul class="footer__links" 
       style="list-style: none;
       display: flex;
@@ -240,8 +360,9 @@ background-color: #f2d915;">
         <li style="padding-right: 10px;" class="footer__item"><a class="footer__link" traget="_blank" href="https://t.me/crpp_spb" aria-label="telegram"><img src="img/tg-logo.png" alt="telegram" width="32" height="32"></a></li>
         <li style="padding-right: 10px;" class="footer__item"><a class="footer__link" traget="_blank" href="https://www.tiktok.com/@crpp_spb?" aria-label="tiktok"><img src="img/tok-logo.png" alt="tiktok" width="32" height="32"></a></li>
       </ul>
-      <p class="footer__text" style="color: #fff; text-align: center;">Вы можете <i><a style="text-decoration: none; color: #fff;" class="footer__link-refuse" target="_blank" href="https://archive.sendpulse.com/v/3aic/8ymou/#">отказаться от рассылки.</a></i> Но мы будем сожалеть об этом...</p>
+      <p class="footer__text" style="color: #fff; text-align: center; font-weight: 400;">Вы можете <i><a style="text-decoration: none; color: #fff;" class="footer__link-refuse" target="_blank" href="https://archive.sendpulse.com/v/3aic/8ymou/#">отказаться от рассылки.</a></i> Но мы будем сожалеть об этом...</p>
     </div>
+
   </section>
 </body>
 
